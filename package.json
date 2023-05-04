@@ -1,0 +1,17 @@
+{
+  "name": "twitter-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Lazar Kulasevic",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "twitter-api-v2": "^1.14.2"
+  }
+}
