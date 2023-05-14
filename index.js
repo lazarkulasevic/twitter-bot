@@ -1,7 +1,7 @@
 require("dotenv").config({ path: __dirname + "/.env" })
 const { questions } = require("./data/questions.json")
 const fs = require("fs")
-const sendTweet = require("./lib/tweetApi2")
+const { sendTweet } = require("./lib/tweetApi2")
 
 const init = async () => {
   let currentIndex = 0
