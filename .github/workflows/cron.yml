@@ -2,7 +2,10 @@ name: Daily Question
 
 on:
   schedule:
-    - cron: "30 8 * * *" # Run at 9:30 AM CET
+    - cron: "0 8 * * *" # Run at 9:30 AM CET
+
+  # Manually trigger the workflow
+  workflow_dispatch:
 
 jobs:
   daily-question:
@@ -16,3 +19,9 @@ jobs:
 
       - name: Run script
         run: node index.js
+
+      - name: Commit changes
+        run: |
+          git add -A
+          git commit -m "index update"
+          git push
