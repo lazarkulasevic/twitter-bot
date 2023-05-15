@@ -22,6 +22,8 @@ jobs:
 
       - name: Commit changes
         run: |
+          git config --global user.email "lazar.kulasevic@gmail.com"
+          git config --global user.name "Actions Bot"
           git add -A
           git commit -m "index update"
           git push
